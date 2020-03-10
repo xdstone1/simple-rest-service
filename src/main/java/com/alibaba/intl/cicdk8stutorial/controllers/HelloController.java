@@ -27,7 +27,7 @@ public class HelloController {
     @RequestMapping("/")
     public String index(@RequestParam(name = "name", required = false) String name) {
         LOGGER.info("Hello service called with the name: {}", name);
-        return "Hello " + (name == null ? "world4" : name) + "!";
+        return "Hello " + (name == null ? "world5" : name) + "!";
     }
 
 }
