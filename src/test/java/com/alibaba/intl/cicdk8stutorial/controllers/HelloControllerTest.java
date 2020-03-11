@@ -38,13 +38,13 @@ public class HelloControllerTest {
     public void getHelloWorld() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Hello world!")));
+                .andExpect(content().string(equalTo("Hello world1!")));
     }
 
     @Test
     public void getHelloMarc() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").requestAttr("name", "Marc"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Hello world!")));
+                .andExpect(content().string(equalTo("Hello world1!")));
     }
 }
